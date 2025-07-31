@@ -1,11 +1,16 @@
+# !pip install ultralytics opencv-python matplotlib
+# To install Libraries
 
+# Upload photos
 from google.colab import files
 uploaded = files.upload()
 
+# Libraries
 from ultralytics import YOLO
 import cv2
 from PIL import Image
 import matplotlib.pyplot as plt
+
 # Load model (YOLOv8 pretrained)
 model = YOLO('yolov8n.pt')  # You can use yolov8s.pt or yolov8m.pt for better accuracy
 # Set image path
